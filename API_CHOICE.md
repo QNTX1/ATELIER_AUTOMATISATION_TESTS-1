@@ -1,6 +1,6 @@
 # API Choice
 
-- Étudiant : (à compléter)
+- Étudiant : Quentin
 - API choisie : Frankfurter
 - URL base : https://api.frankfurter.app
 - Documentation officielle / README : https://www.frankfurter.app/docs/
