@@ -27,6 +27,9 @@
       padding:32px 18px 10px;
       max-width:1100px; margin:0 auto;
     }
+    .header-top{
+      display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;
+    }
     h1{margin:0 0 10px; font-size: clamp(22px, 3vw, 34px);}
     .subtitle{color:var(--muted); max-width:75ch;}
     .container{max-width:1100px; margin:0 auto; padding:18px;}
@@ -160,16 +163,32 @@
     }
     button:hover{filter:brightness(1.05)}
     .small{font-size:12px}
+    .dash-btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 16px;
+      border-radius:12px;
+      background: rgba(98,214,160,0.16);
+      border:1px solid rgba(98,214,160,0.4);
+      color:#d8ffe9;
+      font-weight:600;
+      font-size:13px;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .dash-btn:hover{filter:brightness(1.1); text-decoration:none;}
   </style>
 </head>
 
 <body>
 <header>
-  <div class="row">
-    <span class="pill">Atelier M1 — Tests API</span>
-    <span class="pill ok">Python + Flask</span>
-    <span class="pill warn">PythonAnywhere</span>
-    <span class="pill">Testing as Code</span>
+  <div class="header-top">
+    <div class="row">
+      <span class="pill">Atelier M1 — Tests API</span>
+      <span class="pill ok">Python + Flask</span>
+      <span class="pill warn">PythonAnywhere</span>
+      <span class="pill">Testing as Code</span>
+    </div>
+    <a class="dash-btn" href="{{ url_for('dashboard') }}">Accéder au Dashboard de Suivi 📊</a>
   </div>
   <h1>Atelier — Automatisation des tests d’API publiques</h1>
   <p class="subtitle">
