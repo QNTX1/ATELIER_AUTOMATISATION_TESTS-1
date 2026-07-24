@@ -1,6 +1,6 @@
 # API Choice
 
-- Étudiant : Quentin
+- Étudiant : Quentin LE Goc
 - API choisie : Frankfurter
 - URL base : https://api.frankfurter.app
 - Documentation officielle / README : https://www.frankfurter.app/docs/
